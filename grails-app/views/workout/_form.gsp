@@ -19,7 +19,7 @@
 	
 <ul class="one-to-many">
 <g:each in="${workoutInstance?.bikeRides?}" var="b">
-    <li><g:link controller="bikeRide" action="show" id="${b.id}">${b?.encodeAsHTML()}</g:link></li>
+    <li><g:link controller="bikeRide" action="show" id="${b.id}">${b?.name?.encodeAsHTML()}</g:link></li>
 </g:each>
 <li class="add">
 <g:link controller="bikeRide" action="create" params="['workout.id': workoutInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'bikeRide.label', default: 'BikeRide')])}</g:link>
@@ -37,7 +37,7 @@
 	
 <ul class="one-to-many">
 <g:each in="${workoutInstance?.jogs?}" var="j">
-    <li><g:link controller="jog" action="show" id="${j.id}">${j?.encodeAsHTML()}</g:link></li>
+    <li><g:link controller="jog" action="show" id="${j.id}">${j?.name?.encodeAsHTML()}</g:link></li>
 </g:each>
 <li class="add">
 <g:link controller="jog" action="create" params="['workout.id': workoutInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'jog.label', default: 'Jog')])}</g:link>
@@ -55,7 +55,7 @@
 	
 <ul class="one-to-many">
 <g:each in="${workoutInstance?.sitUps?}" var="s">
-    <li><g:link controller="sitUp" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></li>
+    <li><g:link controller="sitUp" action="show" id="${s.id}">${s?.name?.encodeAsHTML()}</g:link></li>
 </g:each>
 <li class="add">
 <g:link controller="sitUp" action="create" params="['workout.id': workoutInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'sitUp.label', default: 'SitUp')])}</g:link>

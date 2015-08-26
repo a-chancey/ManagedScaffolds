@@ -9,6 +9,8 @@ class UrlMappings {
 
         "/"(controller: "workout", action: "index")
         "/workout/bikeRide"(controller: "bikeRide", action: "create")
+        "/workout/jog"(controller: "jog", action: "create")
+        "/workout/sitUps"(controller: "sitUp", action: "create")
         "500"(view:'/error')
 	}
 }
