@@ -7,7 +7,8 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+        "/"(controller: "workout", action: "index")
+        "/workout/bikeRide"(controller: "bikeRide", action: "create")
         "500"(view:'/error')
 	}
 }

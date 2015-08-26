@@ -1,7 +1,7 @@
 package managedscaffolds
 
 class Workout {
-    static hasMany = [bikeRide:BikeRide]
+    static hasMany = [bikeRides:BikeRide, sitUps:SitUp, jogs:Jog]
 
     String name
     static constraints = {
