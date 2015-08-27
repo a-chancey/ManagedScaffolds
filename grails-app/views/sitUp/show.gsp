@@ -54,7 +54,7 @@
 				<li class="fieldcontain">
 					<span id="workout-label" class="property-label"><g:message code="sitUp.workout.label" default="Workout" /></span>
 					
-						<span class="property-value" aria-labelledby="workout-label"><g:link controller="workout" action="show" id="${sitUpInstance?.workout?.id}">${sitUpInstance?.workout?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="workout-label"><g:link controller="workout" action="show" id="${sitUpInstance?.workout?.id}">${sitUpInstance?.workout?.getName()?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

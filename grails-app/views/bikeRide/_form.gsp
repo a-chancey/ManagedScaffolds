@@ -25,7 +25,7 @@
 		<g:message code="bikeRide.workout.label" default="Workout" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="workout" name="workout.id" from="${managedscaffolds.Workout.list()}" optionKey="id" required="" value="${bikeRideInstance?.workout?.id}" class="many-to-one"/>
+	<g:select id="workout" name="workout.id" from="${managedscaffolds.Workout.list()}" optionKey="id" optionValue="name" required="" value="${bikeRideInstance?.workout?.id}" class="many-to-one"/>
 
 </div>
 

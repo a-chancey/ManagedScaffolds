@@ -34,7 +34,7 @@
 		<g:message code="sitUp.workout.label" default="Workout" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="workout" name="workout.id" from="${managedscaffolds.Workout.list()}" optionKey="id" required="" value="${sitUpInstance?.workout?.id}" class="many-to-one"/>
+	<g:select id="workout" name="workout.id" from="${managedscaffolds.Workout.list()}" optionKey="id" optionValue="name" required="" value="${sitUpInstance?.workout?.id}" class="many-to-one"/>
 
 </div>
 

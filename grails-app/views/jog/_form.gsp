@@ -34,7 +34,7 @@
 		<g:message code="jog.workout.label" default="Workout" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="workout" name="workout.id" from="${managedscaffolds.Workout.list()}" optionKey="id" required="" value="${jogInstance?.workout?.id}" class="many-to-one"/>
+	<g:select id="workout" name="workout.id" from="${managedscaffolds.Workout.list()}" optionKey="id" optionValue="name" required="" value="${jogInstance?.workout?.id}" class="many-to-one"/>
 
 </div>
 

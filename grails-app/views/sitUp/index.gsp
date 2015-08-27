@@ -44,7 +44,7 @@
 					
 						<td>${fieldValue(bean: sitUpInstance, field: "sets")}</td>
 					
-						<td>${fieldValue(bean: sitUpInstance, field: "workout")}</td>
+						<td>${fieldValue(bean: sitUpInstance, field: "workout.name")}</td>
 					
 					</tr>
 				</g:each>

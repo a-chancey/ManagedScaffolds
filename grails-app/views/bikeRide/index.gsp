@@ -40,7 +40,7 @@
 					
 						<td>${fieldValue(bean: bikeRideInstance, field: "distanceInMiles")}</td>
 					
-						<td>${fieldValue(bean: bikeRideInstance, field: "workout")}</td>
+						<td>${fieldValue(bean: bikeRideInstance, field: "workout.name")}</td>
 					
 					</tr>
 				</g:each>
